@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Idempiere4376
+Bundle-SymbolicName: vn.hieplq.idempiere4376
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: vn.hieplq.idempiere4376
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version>=11))"
+Import-Package: org.adempiere.base,
+ org.compiere.model,
+ org.compiere.process,
+ org.compiere.util,
+ org.osgi.service.component.annotations;version="1.2.0";resolution:=optional,
+ org.osgi.service.event;version="1.4.0"
+Service-Component: OSGI-INF/vn.hieplq.idempiere4376.osgi.component.Idempiere4376ModelFactory.xml
+Bundle-ActivationPolicy: lazy
